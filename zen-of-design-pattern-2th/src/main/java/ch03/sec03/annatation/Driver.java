@@ -8,7 +8,7 @@ package ch03.sec03.annatation;
 public class Driver implements IDriver {
 
     @Override
-    public void drive(ch03.sec03.annotation.ICar car) {
+    public void drive(ICar car) {
         car.run();
     }
 }

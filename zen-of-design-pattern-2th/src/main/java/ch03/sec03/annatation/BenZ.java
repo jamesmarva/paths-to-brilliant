@@ -5,7 +5,7 @@ package ch03.sec03.annatation;
  *
  * @author Brilliant James Jamesmarva1993@gmail.com 2020-12-09 11:55
  **/
-public class BenZ implements ch03.sec03.annotation.ICar {
+public class BenZ implements ICar {
     @Override
     public void run() {
         System.out.println("BenZ start running.");

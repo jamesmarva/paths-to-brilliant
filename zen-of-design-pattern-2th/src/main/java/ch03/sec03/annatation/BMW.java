@@ -5,7 +5,7 @@ package ch03.sec03.annatation;
  *
  * @author Brilliant James Jamesmarva1993@gmail.com 2020-12-09 11:53
  **/
-public class BMW implements ch03.sec03.annotation.ICar {
+public class BMW implements ICar {
 
     @Override
     public void run() {
