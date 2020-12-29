@@ -16,6 +16,10 @@
         <module>juejin-netty-vx</module>
         <module>gupaoedu-tom-netty</module>
         <module>geek-time</module>
+        <module>my-practice</module>
+        <module>coding-interview-guide</module>
+        <module>master-lambda</module>
+        <module>vesta-id-generator</module>
     </modules>
 
 
