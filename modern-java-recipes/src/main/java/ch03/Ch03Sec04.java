@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.junit.Assert.assertTrue;
+
 
 
 /**
@@ -52,7 +52,7 @@ public class Ch03Sec04 {
                 .collect(Collectors.toList());
         afterSorted.stream()
                 .reduce((pre, cur) -> {
-                   assertTrue(pre.length() <= cur.length());
+                   assert pre.length() <= cur.length();
                    return cur;
                 });
     }
