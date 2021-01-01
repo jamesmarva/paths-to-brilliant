@@ -1,4 +1,4 @@
-package reverseproxy;
+package reverse;
 
 import io.undertow.Undertow;
 import io.undertow.server.handlers.proxy.LoadBalancingProxyClient;
