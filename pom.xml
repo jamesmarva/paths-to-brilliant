@@ -21,7 +21,15 @@
         <module>master-lambda</module>
         <module>vesta-id-generator</module>
         <module>modern-java-recipes</module>
+        <module>undertow</module>
     </modules>
+
+    <properties>
+        <undertow.version>2.2.3.Final</undertow.version>
+
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
@@ -30,6 +38,23 @@
             <artifactId>guava</artifactId>
             <version>30.1-jre</version>
         </dependency>
+
+
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-core</artifactId>
+                <version>${undertow.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-servlet</artifactId>
+                <version>${undertow.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-websockets-jsr</artifactId>
+                <version>${undertow.version}</version>
+            </dependency>
     </dependencies>
 
 
