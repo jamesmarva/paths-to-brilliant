@@ -24,7 +24,6 @@ public class MakeTeaDemo0 {
         System.out.println(makeTeaCallableFutureTask.get());
 
     }
-
 }
 
 class MakeTeaCallable implements Callable<String> {
@@ -45,7 +44,7 @@ class MakeTeaCallable implements Callable<String> {
         String tf = fetchTeaFuture.get();
         System.out.println("T1:拿到茶叶:"+tf);
         System.out.println("T1:泡茶...");
-        return "上茶:" + tf;
+        return ("上茶:" + tf);
     }
 }
 
