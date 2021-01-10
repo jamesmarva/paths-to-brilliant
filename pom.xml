@@ -9,6 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
     <modules>
         <module>zen-of-design-pattern-2th</module>
         <module>java8-in-action</module>
@@ -21,6 +26,7 @@
         <module>master-lambda</module>
         <module>vesta-id-generator</module>
         <module>modern-java-recipes</module>
+        <module>undertow-demo</module>
     </modules>
 
     <dependencies>
