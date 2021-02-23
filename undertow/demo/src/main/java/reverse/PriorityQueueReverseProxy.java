@@ -58,7 +58,11 @@ public class PriorityQueueReverseProxy implements ProxyClient  {
                               TimeUnit timeUnit) {
         Host h = null;
         PriorityHostEntity entity = null;
-        entity = priorityQueue.poll();
+        try {
+            entity = priorityQueue.poll(300, TimeUnit.MILLISECONDS);
+        } catch (InterruptedException e) {
+            return;
+        }
         SmoothBurstyRateLimiter limiter = Objects.requireNonNull(entity).getLimiter();
 //        log.info("limitor: " + limiter.queryEarliestAvailable(0));
         if (limiter.tryAcquire(1, 200L, TimeUnit.MICROSECONDS)) {

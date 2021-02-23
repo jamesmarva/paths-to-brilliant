@@ -22,6 +22,7 @@
         <module>vesta-id-generator</module>
         <module>modern-java-recipes</module>
         <module>undertow</module>
+        <module>Netty权威指南2nd</module>
     </modules>
 
     <properties>
