@@ -24,6 +24,7 @@
         <module>modern-java-recipes</module>
         <module>undertow</module>
         <module>undertow-demo</module>
+        <module>Netty权威指南2nd</module>
     </modules>
 
     <properties>
