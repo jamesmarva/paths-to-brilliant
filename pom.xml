@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+
     <modules>
         <module>zen-of-design-pattern-2th</module>
         <module>java8-in-action</module>
@@ -22,6 +23,7 @@
         <module>vesta-id-generator</module>
         <module>modern-java-recipes</module>
         <module>undertow</module>
+        <module>undertow-demo</module>
         <module>Netty权威指南2nd</module>
     </modules>
 
