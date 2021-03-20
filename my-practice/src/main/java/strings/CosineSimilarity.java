@@ -37,26 +37,26 @@ public class CosineSimilarity {
             dstMap.computeIfPresent(i, (k, v) -> v + 1);
         }
 
-//        分母
-        BigDecimal denominator = new BigDecimal("0");
+//        分子 （分子在上部分，分母在下部分）
+        BigDecimal numerator = new BigDecimal("0");
 
-        for (char i : srcChars) {
-            if (srcMap.containsKey(i) && dstMap.containsKey(i)) {
-                denominator = denominator.add(new BigDecimal(String.valueOf(srcMap.get(i) * dstMap.get(i))));
+        for (char i : srcMap.keySet()) {
+            if (dstMap.containsKey(i)) {
+                numerator = numerator.add(new BigDecimal(String.valueOf(srcMap.get(i) * dstMap.get(i))));
             }
         }
 
         double srcDou = 0.0d;
         double dstDou = 0.0d;
-        for (Character i : srcChars) {
+        for (Character i : srcMap.keySet()) {
             srcDou += Math.pow(srcMap.get(i), 2);
         }
 
-        for (Character i : dstChars) {
+        for (Character i : dstMap.keySet()) {
             dstDou += Math.pow(dstMap.get(i), 2);
         }
-//       分子
-        BigDecimal numerator = new BigDecimal(String.valueOf(Math.sqrt(srcDou) * Math.sqrt(dstDou)));
-        return denominator.divide(numerator, 5, RoundingMode.HALF_UP);
+//       分母
+        BigDecimal denominator = new BigDecimal(String.valueOf(Math.sqrt(srcDou) * Math.sqrt(dstDou)));
+        return numerator.divide(denominator, 5, RoundingMode.HALF_UP);
     }
 }
