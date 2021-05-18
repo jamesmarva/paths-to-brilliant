@@ -6,3 +6,14 @@ zen-of-design-pattern-2th/target
 *.class
 *.kotlin_module
 *.lst
+Algo-4th/.classpath
+*.prefs
+Algo-4th/.project
+coding-interview-guide/.project
+*/.project
+*/.classpath
+*/.factorypath
+*/*/.classpath
+*/*/.project
+*/*/.factorypath
+.project
