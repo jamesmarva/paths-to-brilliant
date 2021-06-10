@@ -26,6 +26,7 @@
         <module>undertow-demo</module>
         <module>Netty权威指南2nd</module>
         <module>Algo-4th</module>
+        <module>java8-lambdas-exercises</module>
     </modules>
 
     <properties>
