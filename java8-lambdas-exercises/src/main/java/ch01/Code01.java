@@ -23,6 +23,10 @@ public class Code01 {
 
         BinaryOperator<Long> addExplicitType = (Long x, Long y) -> x + y;
 
+        String s = "absadfcadasdf";
+        System.out.println(s.contains(""));
+
     }
+
 
 }
